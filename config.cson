@@ -1,0 +1,17 @@
+# Use this configuration for the development.
+# Deployment will replace it with an appropriate one
+# domainname: SET VIA TUTOR_DOMAIN_NAME
+database:
+#  host : SET VIA DOCKER LINK ENV RETHINKDB_PORT_28015_TCP_ADDR
+#  port : SET VIA DOCKER LINK ENV RETHINKDB_PORT_28015_TCP_PORT
+  name : "TutorDB"
+session:
+#  secret: SET VIA TUTOR_SESSION_SECRET
+  restrict: "/api"
+saml:
+#  privateKey: SET VIA TUTOR_SAML_KEY
+#  certificate: SET VIA TUTOR_SAML_CERT
+  entityPath: ''
+  assertEndpoint: '/Shibboleth.sso/SAML2/POST'
+#  idpLoginUrl: SET VIA TUTOR_IDP_LOGIN_URL 
+#  idpCertificate: SET VIA TUTOR_IDP_CERT

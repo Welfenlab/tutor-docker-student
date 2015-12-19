@@ -1,0 +1,3 @@
+[submodule "tutor-student"]
+	path = tutor-student
+	url = git@github.com:Welfenlab/tutor-student.git
